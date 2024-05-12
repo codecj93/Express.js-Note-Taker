@@ -16,7 +16,7 @@ You utilize the app but entering this URL into your browser https://express-js-n
 ## Usage
 
 When you open the app, you will be presented with this landing page:
-![alt text](<Simages/Screenshot 2024-05-12 at 11.35.41 AM.png>)
+![alt text](<images/Screenshot 2024-05-12 at 11.35.41 AM.png>)
 Click on the "Get Started Button" and you will be brought to the following page:
 ![alt text](<images/Screenshot 2024-05-12 at 11.43.27 AM.png>)
 You are able to type in the title and text of your note. When you are done with your note, you can click the "save note" button on the top right corner of your screen and your note will save on a list to the left of your screen. You will then be allowed to type in a new note. You can also click "clear form" to delete what you have entered while you are inputting the information. You can click on any of your notes on the left and that information will populate in the middle of the page to allow you to review past notes. The following video demonstrates the app's functionality:
