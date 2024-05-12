@@ -44,24 +44,35 @@ app.post("/api/notes", (req, res) => {
     
     fs.readFile("./db/db.json", "utf-8", (err, data) => {
         if(err) {
-            res.send("There is an error!")
+            res.send("There is an error!");
         } else {
-            const parsedData = JSON.parse(data)
-            uuidv4()
+            
+            let parsedData = [];
+            if (data) {
+                parsedData = JSON.parse(data);  
 
-            console.log(parsedData)
+            }
 
-            parsedData.push(req.body)
-
-            fs.writeFile("./db/db.json", JSON.stringify(parsedData), () => {
-                uuidv4()
-                res.json(parsedData)
-               
-            })
-
-        }
-    })
-})
+            const id = uuidv4();
+            const newNote = {
+                id: id,
+                title: req.body.title,
+                text: req.body.text
+            
+            };
+            parsedData.push(newNote)
+            
+        
+            fs.writeFile("./db/db.json", JSON.stringify(parsedData), (error) => {
+                if (err) {
+                    res.send("There is an error!")
+                } else {
+                res.json(parsedData); 
+            }
+        });
+    }
+});
+});
 
 
 app.listen(3001, () => {
