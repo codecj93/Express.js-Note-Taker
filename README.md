@@ -20,7 +20,7 @@ When you open the app, you will be presented with this landing page:
 Click on the "Get Started Button" and you will be brought to the following page:
 ![alt text](<images/Screenshot 2024-05-12 at 11.43.27 AM.png>)
 You are able to type in the title and text of your note. When you are done with your note, you can click the "save note" button on the top right corner of your screen and your note will save on a list to the left of your screen. You will then be allowed to type in a new note. You can also click "clear form" to delete what you have entered while you are inputting the information. You can click on any of your notes on the left and that information will populate in the middle of the page to allow you to review past notes. The following video demonstrates the app's functionality:
-![alt text](<images/Screen Recording 2024-05-12 at 11.51.30 AM.mov>)
+![alt text](<images/ScreenRecording2024-05-12at11.51.30AM-ezgif.com-video-to-gif-converter.gif>)
 
 ## Improvement
 
