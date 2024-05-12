@@ -73,7 +73,9 @@ const renderActiveNote = () => {
 };
 
 const handleNoteSave = () => {
+  const { v4: uuidv4 } = require('uuid');
   const newNote = {
+    id: uuidv4(),
     title: noteTitle.value,
     text: noteText.value
   };

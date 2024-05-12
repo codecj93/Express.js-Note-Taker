@@ -1,4 +1,5 @@
 const express = require("express");
+const { v4: uuidv4 } = require('uuid');
 const path = require("path");
 const fs = require("fs");
 
@@ -40,19 +41,22 @@ app.get("/api/notes", (req, res) => {
 
 app.post("/api/notes", (req, res) => {
     console.log(req.body);
-
+    
     fs.readFile("./db/db.json", "utf-8", (err, data) => {
         if(err) {
             res.send("There is an error!")
         } else {
             const parsedData = JSON.parse(data)
+            uuidv4()
 
             console.log(parsedData)
 
             parsedData.push(req.body)
 
             fs.writeFile("./db/db.json", JSON.stringify(parsedData), () => {
+                uuidv4()
                 res.json(parsedData)
+               
             })
 
         }
